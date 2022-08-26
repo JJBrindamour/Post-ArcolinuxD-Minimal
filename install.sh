@@ -11,21 +11,21 @@ sudo pacman -S archlinux-keyring
 sudo pacman -Syyu
 
 # Install Pacman Packages
-sudo pacman -S pipewire pipewire-pulse pipewire-alsa pipewire-jack pamixer obconf ttf-font-awesome ttf-nerd-fonts-mono lxappearance kvantum grub-customizer openbox bspwm sxhkd sddm alacritty vim nano micro thunar geany sddm zsh picom xfce4-power-manager xfce4-settings dunst wget neofetch nitrogen plank polybar ranger rofi starship firefox arandr carla flatpak wine
+sudo pacman -S pipewire pipewire-pulse pipewire-alsa pipewire-jack pamixer obconf ttf-font-awesome ttf-nerd-fonts-symbols-mono lxappearance kvantum grub-customizer openbox bspwm sxhkd sddm alacritty vim nano micro thunar geany sddm zsh picom xfce4-power-manager xfce4-settings dunst wget neofetch nitrogen plank polybar ranger rofi starship firefox arandr carla flatpak wine betterlockscreen spotify cava networkmanager-dmenu-git papirus-folders-nordic
 
 # Install Yay
-git clone https://aur.archlinux.org/yay.git "$HOME"/yay
-(cd "$HOME"/yay && makepkg -si)
+#git clone https://aur.archlinux.org/yay.git "$HOME"/yay
+#(cd "$HOME"/yay && makepkg -si)
 
 # Install AUR Packages
-yay -S betterlockscreen spotify cava networkmanager-dmenu-git papirus-folders-nordic
+#yay -S betterlockscreen spotify cava networkmanager-dmenu-git papirus-folders-nordic # IN ARCO REPOS
 
 # Install Configs
-for custom in ./.config/*; do
-	for preinstalled in "$HOME"/.config/*; do
-		if [[ $(basename $custom) == $(basename $preinstalled) ]]; then rm -rf preinstalled; fi
-	done
-done
+mv "$HOME"/.config "$HOME"/.config-backup
+mv "$HOME"/.bashrc "$HOME"/.bashrc-backup
+mv "$HOME"/.zshrc "$HOME"/.zshrc-backup
+mv "$HOME"/.gtkrc-2.0 "$HOME"/.gtkrc-2.0-backup
+mv "$HOME"/.xinitrc "$HOME"/.xinitrc-backup
 
 mv ./.config/* "$HOME"/.config/
 mv ./.bashrc "$HOME"/.bashrc
