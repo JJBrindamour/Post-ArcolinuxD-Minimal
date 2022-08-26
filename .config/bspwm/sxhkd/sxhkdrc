@@ -49,12 +49,8 @@ shift + {left,down,up,right}
 	bspc node -f {west,south,north,east}
 
 # apps
-super + {b, f, ctrl + f, e, shift + e, p, space}
-	{firefox, thunar, alacritty -e ranger, geany, alacritty -e vim, color-gpick, ~/.config/rofi/bin/launcher}
-
-# logout
-super + x
-    ~/.config/rofi/bin/powermenu
+super + {b, f, ctrl + f, e, shift + e, p, n, s x, space, alt + space }
+	{firefox, thunar, alacritty -e ranger, geany, alacritty -e vim, color-gpick, networkmanager_dmenu, ~/.config/openbox/rofi/bin/screenshot, ~/.config/rofi/bin/powermenu, ~/.config/rofi/bin/launcher, ~/.config/openbox/rofi/bin/runner}
 
 # volume control
 super + v + {equal,minus}

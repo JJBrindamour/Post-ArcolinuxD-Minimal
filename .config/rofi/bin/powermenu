@@ -49,4 +49,3 @@ case $chosen in
 		openbox --exit
         ;;
 esac
-
