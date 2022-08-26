@@ -14,7 +14,7 @@ sudo pacman -Syyu
 sudo pacman -S pipewire pipewire-pulse pipewire-alsa pipewire-jack pamixer obconf ttf-font-awesome ttf-nerd-fonts-mono lxappearance kvantum grub-customizer openbox bspwm sxhkd sddm alacritty vim nano micro thunar geany sddm zsh picom xfce4-power-manager xfce4-settings dunst wget neofetch nitrogen plank polybar ranger rofi starship firefox arandr carla flatpak wine
 
 # Install Yay
-git clone https://aur.archlinux.com/yay.git "$HOME"/yay
+git clone https://aur.archlinux.org/yay.git "$HOME"/yay
 (cd "$HOME"/yay && makepkg -si)
 
 # Install AUR Packages
