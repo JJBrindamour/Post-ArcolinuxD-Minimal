@@ -18,7 +18,7 @@ git clone https://aur.archlinux.com/yay.git "$HOME"/yay
 (cd "$HOME"/yay && makepkg -si)
 
 # Install AUR Packages
-yay -S betterlockscreen spotify cava github-desktop networkmanager-dmenu-git papirus-folders-nordic
+yay -S betterlockscreen spotify cava networkmanager-dmenu-git papirus-folders-nordic
 
 # Install Configs
 for custom in ./.config/*; do
