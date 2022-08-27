@@ -18,7 +18,7 @@ sudo pacman -S pipewire pipewire-pulse pipewire-alsa pipewire-jack pamixer obcon
 #(cd "$HOME"/yay && makepkg -si)
 
 # Install AUR Packages
-yay -S networkmanager-dmenu-git xfce-pokit obmenu-generator nerd-fonts-fira-code # betterlockscreen spotify cava papirus-folders-nordic # IN ARCO REPOS
+yay -S networkmanager-dmenu-git xfce-polkit obmenu-generator nerd-fonts-fira-code # betterlockscreen spotify cava papirus-folders-nordic # IN ARCO REPOS
 
 # Install Configs
 mv "$HOME"/.config "$HOME"/.config-backup
