@@ -4,5 +4,5 @@
 /* Text Font */
 
 * {
-    font:				 	"Sans Bold 10";
+    font:				 	"FiraCode Nerd Font Bold 10";
 }
