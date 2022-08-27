@@ -13,14 +13,14 @@ uptime=$(uptime -p | sed -e 's/up //g')
 ## Buttons
 layout=`cat $HOME/.config/rofi/powermenu.rasi | grep BUTTON | cut -d'=' -f2 | tr -d '[:blank:],*/'`
 if [[ "$layout" == "TRUE" ]]; then
-	shutdown=""
-	reboot="ﰇ"
+	shutdown="⏻"
+	reboot=""
 	lock=""
 	suspend=""
 	logout=""
 else
-	shutdown="  Shutdown"
-	reboot="ﰇ  Restart"
+	shutdown="⏻  Shutdown"
+	reboot="  Restart"
 	lock="  Lock"
 	suspend="  Sleep"
 	logout="  Logout"
