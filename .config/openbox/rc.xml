@@ -313,22 +313,22 @@
     </keybind>
     <keybind key="W-x">
       <action name="Execute">
-        <command>~/.config/openbox/rofi/bin/powermenu</command>
+        <command>~/.config/rofi/bin/powermenu</command>
       </action>
     </keybind>
     <keybind key="W-s">
       <action name="Execute">
-        <command>~/.config/openbox/rofi/bin/screenshot</command>
+        <command>~/.config/rofi/bin/screenshot</command>
       </action>
     </keybind>
     <keybind key="W-Space">
       <action name="Execute">
-        <command>~/.config/openbox/rofi/bin/launcher</command>
+        <command>~/.config/rofi/bin/launcher</command>
       </action>
     </keybind>
     <keybind key="C-W-Space">
       <action name="Execute">
-        <command>~/.config/openbox/rofi/bin/runner</command>
+        <command>~/.config/rofi/bin/runner</command>
       </action>
     </keybind>
     <keybind key="W-p">

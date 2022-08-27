@@ -11,13 +11,13 @@ dir="`xdg-user-dir PICTURES`/Screenshots"
 file="Screenshot_${time}_${geometry}.png"
 
 # Variables and functions
-MENUS_LIBDIR='/usr/share/archcraft/openbox/menulib'
+MENUS_LIBDIR='$HOME/.config/openbox/dependencies/menulib'
 if ! . "$MENUS_LIBDIR/archcraft.cfg" 2> /dev/null; then
 	echo "Error: Failed to locate archcraft.cfg in $MENUS_LIBDIR" >&2
 	exit 1
 fi
 
-notify_cmd_shot="dunstify -u low --replace=699 -i /usr/share/archcraft/icons/dunst/picture.png"
+notify_cmd_shot="dunstify -u low --replace=699 -i $HOME/.config/dunst/icons/picture.png"
 
 # notify and view screenshot
 notify_view () {
@@ -38,7 +38,7 @@ copy_shot () {
 # countdown
 countdown () {
 	for sec in `seq $1 -1 1`; do
-		dunstify -t 1000 --replace=699 -i /usr/share/archcraft/icons/dunst/timer.png "Taking shot in : $sec"
+		dunstify -t 1000 --replace=699 -i "$HOME"/.config/dunst/icons/timer.png "Taking shot in : $sec"
 		sleep 1
 	done
 }

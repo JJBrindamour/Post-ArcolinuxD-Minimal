@@ -47,5 +47,6 @@ case $chosen in
         ;;
     $logout)
 		openbox --exit
+		bspc quit
         ;;
 esac

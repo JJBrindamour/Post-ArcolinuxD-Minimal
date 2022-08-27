@@ -5,7 +5,7 @@
 
 ## Openbox Pipemenu for displaying keybinds
 
-readonly KBSCRIPTDIR="/usr/share/archcraft/openbox/pipemenus"
+readonly KBSCRIPTDIR="$HOME/.config/openbox/dependencies/pipemenus"
 readonly KBSCRIPT="$KBSCRIPTDIR/ac-kb"
 readonly CFG_DIR="$HOME/.config/openbox"
 readonly RCPATH="$CFG_DIR/rc.xml"
@@ -28,7 +28,7 @@ case "$@" in
 esac
 
 # Variables and functions
-MENUS_LIBDIR='/usr/share/archcraft/openbox/menulib'
+MENUS_LIBDIR='$CFG_DIR/dependencies/menulib'
 if ! . "$MENUS_LIBDIR/archcraft.cfg" 2> /dev/null; then
 	echo "Error: Failed to locate archcraft.cfg in $MENUS_LIBDIR" >&2
 	exit 1

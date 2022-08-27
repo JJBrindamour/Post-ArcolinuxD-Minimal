@@ -2,8 +2,8 @@
 <!-- Copyright (C) 2020-2022 Aditya Shakya <adi1090x@gmail.com> -->
 <!-- Everyone is permitted to copy and distribute copies of this file under GNU-GPL3 -->
 <!DOCTYPE menu [
-  <!ENTITY icons "~/.config/openbox/dependancies/icons">
-  <!ENTITY pipes "~/.config/openbox/dependancies/pipemenus">
+  <!ENTITY icons "$HOME/.config/openbox/dependencies/icons">
+  <!ENTITY pipes "$HOME/.config/openbox/dependencies/pipemenus">
 ]>
 <openbox_menu xmlns="http://openbox.org/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://openbox.org/  file:///usr/share/openbox/menu.xsd">
   <menu id="root-menu" title="Menu" label="Openbox 3">
@@ -39,44 +39,44 @@
 		<menu icon="&icons;/root.png" id="apps-as-root" label="Apps As Root">
 			<item label="Terminal (alacritty)">
 				<action name="Execute">
-					<execute>~/.config/openbox/rofi/bin/apps_as_root alacritty</execute>
+					<execute>~/.config/rofi/bin/apps_as_root alacritty</execute>
 				</action>
 			</item>
 			<item label="File Manager (thunar)">
 				<action name="Execute">
-					<execute>~/.config/openbox/rofi/bin/apps_as_root 'dbus-run-session thunar'</execute>
+					<execute>~/.config/rofi/bin/apps_as_root 'dbus-run-session thunar'</execute>
 				</action>
 			</item>
 			<item label="Text Editor (geany)">
 				<action name="Execute">
-					<execute>~/.config/openbox/rofi/bin/apps_as_root geany</execute>
+					<execute>~/.config/rofi/bin/apps_as_root geany</execute>
 				</action>
 			</item>
 			<separator/>
 			<item label="File Manager CLI (ranger)">
 				<action name="Execute">
-					<execute>~/.config/openbox/rofi/bin/apps_as_root 'alacritty -e ranger'</execute>
+					<execute>~/.config/rofi/bin/apps_as_root 'alacritty -e ranger'</execute>
 				</action>
 			</item>
 			<item label="Text Editor CLI (vim)">
 				<action name="Execute">
-					<execute>~/.config/openbox/rofi/bin/apps_as_root 'alacritty -e vim'</execute>
+					<execute>~/.config/rofi/bin/apps_as_root 'alacritty -e vim'</execute>
 				</action>
 			</item>
 			<separator/>
 			<item label="Lxappearance">
 				<action name="Execute">
-					<execute>~/.config/openbox/rofi/bin/apps_as_root 'lxappearance'</execute>
+					<execute>~/.config/rofi/bin/apps_as_root 'lxappearance'</execute>
 				</action>
 			</item>
 			<item label="QT5 Settings">
 				<action name="Execute">
-					<execute>~/.config/openbox/rofi/bin/apps_as_root 'qt5ct'</execute>
+					<execute>~/.config/rofi/bin/apps_as_root 'qt5ct'</execute>
 				</action>
 			</item>
 			<item label="kvantum Manager">
 				<action name="Execute">
-					<execute>~/.config/openbox/rofi/bin/apps_as_root 'kvantummanager'</execute>
+					<execute>~/.config/rofi/bin/apps_as_root 'kvantummanager'</execute>
 				</action>
 			</item>
 		</menu>
@@ -95,7 +95,7 @@
 			<menu id="obconfig" label="Openbox">
 				<item label="Edit menu.xml">
 					<action name="Execute">
-						<command>exo-open ~/.config/openbox/menu-icons.xml</command>
+						<command>exo-open ~/.config/openbox/menu.xml</command>
 					</action>
 				</item>
 				<item label="Edit rc.xml">

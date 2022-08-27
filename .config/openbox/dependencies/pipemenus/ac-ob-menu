@@ -6,7 +6,7 @@
 ## Openbox Pipemenu to change openbox menu style
 
 # Variables and functions
-MENUS_LIBDIR='/usr/share/archcraft/openbox/menulib'
+MENUS_LIBDIR='$HOME/.config/openbox/dependencies/menulib'
 if ! . "$MENUS_LIBDIR/archcraft.cfg" 2> /dev/null; then
 	echo "Error: Failed to locate archcraft.cfg in $MENUS_LIBDIR" >&2
 	exit 1
