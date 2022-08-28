@@ -26,12 +26,11 @@ prompt {
     enabled: 						true;
 	padding: 						4px 4px 6px 6px;
 	background-color: 				@BGA;
-	text-color: 					@FG;
+	text-color: 					@SEl;
 }
 
 textbox-prompt-colon {
 	expand: 						false;
-	str: 							" ";
     background-color:               @BGA;
     text-color:                     @IMG;
     padding:                        4px 0px 0px 8px;

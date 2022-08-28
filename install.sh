@@ -11,14 +11,14 @@ sudo pacman -S archlinux-keyring
 sudo pacman -Syyu
 
 # Install Pacman Packages
-sudo pacman -S pipewire pipewire-pulse pipewire-alsa pipewire-jack pamixer obconf lxappearance kvantum grub-customizer gpick openbox bspwm sxhkd sddm alacritty vim nano micro thunar geany sddm zsh picom xfce4-power-manager xfce4-settings dunst wget neofetch nitrogen plank polybar ranger rofi starship firefox light arandr carla flatpak wine betterlockscreen spotify cava papirus-folders-nordic
+sudo pacman -S pipewire pipewire-pulse pipewire-alsa pipewire-jack pamixer obconf lxappearance kvantum grub-customizer gpick openbox bspwm sxhkd sddm alacritty vim nano micro thunar geany sddm zsh picom xfce4-power-manager xfce4-settings dunst wget neofetch nitrogen plank polybar ranger rofi starship firefox light arandr carla flatpak wine betterlockscreen spotify cava
 
 # Install Yay
 #git clone https://aur.archlinux.org/yay.git "$HOME"/yay
 #(cd "$HOME"/yay && makepkg -si)
 
 # Install AUR Packages
-yay -S networkmanager-dmenu-git xfce-polkit obmenu-generator nerd-fonts-fira-code # betterlockscreen spotify cava papirus-folders-nordic # IN ARCO REPOS
+yay -S numix-circle-icon-theme-git networkmanager-dmenu-git xfce-polkit obmenu-generator nerd-fonts-fira-code # betterlockscreen spotify cava papirus-folders-nordic # IN ARCO REPOS
 
 # Install Configs
 mv "$HOME"/.config "$HOME"/.config-backup
